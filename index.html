@@ -30,9 +30,9 @@
 
     const app = Vue.createApp({
       components: {
-        'my-component': Vue.defineAsyncComponent( () => loadModule('./myComponent.vue', options) )
+        'main-component': Vue.defineAsyncComponent( () => loadModule('./mainComponent.vue', options) )
       },
-      template: '<my-component></my-component>'
+      template: '<main-component></main-component>'
     });
 
     app.mount('#app');
